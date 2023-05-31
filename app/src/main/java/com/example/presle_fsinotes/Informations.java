@@ -46,7 +46,6 @@ public class Informations extends AppCompatActivity {
 
             id = (int) getIntent().getIntExtra("id_log",0);
             System.out.println(id);
-
         }
         etudiant = new Etudiant();
         processData();
@@ -83,7 +82,7 @@ public class Informations extends AppCompatActivity {
     private void processData() {
         Call<Etudiant> call = Controllerapi
                 .getInstance()
-                .getapietu().getapi(1);
+                .getapietu().getapi(id);
 
         call.enqueue(new Callback<Etudiant>() {
 

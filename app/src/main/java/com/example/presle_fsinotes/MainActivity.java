@@ -59,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(getApplicationContext(),accueil.class);
                     intent.putExtra("id_log",etudiant.getId_etu());
-
+                    System.out.println(etudiant.getId_etu());
                     startActivity(intent);
+                    ;
 
                 }
 

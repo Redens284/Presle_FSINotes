@@ -37,6 +37,7 @@ public class bilan1 extends AppCompatActivity {
 
 
         }
+
         processData();
 
 

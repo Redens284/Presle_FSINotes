@@ -1,6 +1,8 @@
 package com.example.presle_fsinotes;
 
-public class Etudiant {
+import java.io.Serializable;
+
+public class Etudiant implements Serializable {
 
     private Integer id_etu;
     private String nom_etu;

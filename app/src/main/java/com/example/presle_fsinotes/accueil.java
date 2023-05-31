@@ -25,7 +25,7 @@ public class accueil extends AppCompatActivity {
         if(getIntent().hasExtra("id_log")){
 
             id = (int) getIntent().getIntExtra("id_log",0);
-
+            System.out.println(id);
         }
 
         buttonNote.setOnClickListener(new View.OnClickListener() {
